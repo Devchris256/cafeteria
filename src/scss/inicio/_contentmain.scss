@@ -1,0 +1,16 @@
+@use '../base/variables' as v;
+@use '../base/minxis' as m;
+
+.contentMain {
+    background-color: v.$white;
+    padding-inline: 1.25rem;
+    padding-block: 3.125rem;
+    box-sizing: border-box;
+    
+    @include m.tablet{ 
+        margin-block-start: -6.25rem;
+        position: relative;
+        padding: 6.25rem;
+    }
+    
+}

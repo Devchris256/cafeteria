@@ -1,0 +1,41 @@
+@use '../base/variables' as v;
+@use '../base/minxis' as m;
+
+
+.ourTestimony {
+    padding-block: 6.25rem;
+    padding-inline: 1.25rem;
+    background: v.$white;
+    margin-block-start: -6.25rem;
+    position: relative;
+    box-sizing: border-box;
+
+    .testimony {
+        background: v.$coffeeLight;
+        padding-inline: 2.5rem;
+        padding-block: 1.25rem;
+        border-radius: 1rem;
+        margin: 0 auto;
+    }
+
+    .author {
+        text-align: right;
+        font-size: 1.25rem;
+        font-family: v.$fontCursive;
+        color: v.$primary;
+
+        &::before {
+            content: '- ';
+        }
+    }
+
+    @include m.tablet { 
+        .testimony {
+            max-inline-size: 50%;
+        }
+
+        .author {
+            font-size: 1.5rem;
+        }
+    }
+}

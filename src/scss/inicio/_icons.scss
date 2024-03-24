@@ -1,0 +1,20 @@
+@use '../base/variables' as v;
+@use '../base/minxis' as m;
+
+.icons-list {
+    margin-block: 3.125rem;
+
+    @include m.tablet {
+        @include m.grid (repeat(3, 1fr), 3.125rem);
+    }
+
+    .icons-icon {
+        inline-size: 7.5rem;
+    }
+
+    .icons-text {
+        font-family: v.$fontCursive;
+        font-size: 2rem;
+        color: v.$primary;
+    }
+}
