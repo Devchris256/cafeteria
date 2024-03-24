@@ -1,0 +1,43 @@
+@use 'variables' as v;
+
+@mixin phone {
+    @media (min-width: v.$phone) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: v.$tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: v.$desktop) {
+        @content;
+    }
+}
+
+@mixin grid ($columns, $gap) {
+    display: grid;
+    grid-template-columns: $columns;
+    gap: $gap;
+}
+
+@mixin gridrows ($rows, $gap) {
+    display: grid;
+    grid-template-rows: $rows;
+    gap: $gap;
+}
+
+@mixin imgsize ($inline-size:auto, $block-size:auto, $object-position) {
+    inline-size: $inline-size;
+    block-size: $block-size;
+    object-position: $object-position;
+}
+
+@mixin bgimg ($bgimage){
+    @supports (background-image:url('#{$bgimage}')) {
+        background-image: url('#{$bgimage}');
+    }
+}

@@ -1,0 +1,59 @@
+@use '../base/variables' as v;
+@use '../base/minxis' as m;
+
+.content-contacto {
+    @include m.tablet { 
+
+    @include m.grid(repeat(2, 1fr), 1.5rem); 
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 40%;
+
+    @include m.bgimg ('../img/granos_cafe.jpg');
+    @include m.bgimg ('../img/granos_cafe.webp');
+    @include m.bgimg ('../img/granos_cafe.avif');
+    }
+
+}
+
+
+.form {
+    .campo {
+        margin-block-end: 1.25rem;
+    }
+
+    .label {
+        font-size: 1.375rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: v.$black;
+        display: block;
+    }
+
+    .input,
+    .select {
+        inline-size: 100%;
+        padding: .625rem;
+        border: .25rem solid v.$primary;
+        box-sizing: border-box;
+    }
+
+    .submit {
+        inline-size: 100%;
+        padding: .625rem;
+        font-size: 1.375rem;
+        text-transform: uppercase;
+        color: v.$white;
+        background: v.$primary;
+        border: none;
+        font-weight: 700;
+        cursor: pointer;
+        transition: scale .3s;
+
+        &:hover,
+        &:focus {
+            scale: .9;
+        }
+    }
+
+}

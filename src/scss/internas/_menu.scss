@@ -1,0 +1,42 @@
+@use '../base/variables' as v;
+@use '../base/minxis' as m;
+
+.content-menu {
+
+    &::after {
+        content: ' ';
+        display: block;
+        inline-size: 100%;
+        block-size: 12.5rem;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: contain;
+        margin: auto;
+
+        @include m.bgimg('../img/cafe.jpg');
+        @include m.bgimg('../img/cafe.webp');
+        @include m.bgimg('../img/cafe.avif');
+    }
+
+    @include m.phone { 
+        &::after {
+            block-size: 18.75rem;
+        }
+    }
+
+    @include m.tablet { 
+
+        @include m.grid(repeat(2, 1fr), 1.5rem);
+
+        &::after {
+            block-size: 100%;
+        }
+    }
+    
+    .description {
+        font-size: 1.25rem;
+    }
+    
+
+    
+}

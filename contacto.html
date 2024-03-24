@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora nuestra cafetería y disfruta de deliciosos cafés y tentadores bocadillos. Descubre quiénes somos, nuestro menú, nuestra galería y cómo contactarnos. ¡Ven y disfruta de momentos memorables con nosotros!">
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./build/css/app.css">
+    <title>Cafeteria - Contacto</title>
+</head>
+<body>
+    <header class="header header-contacto"> 
+        <div class="wrapper">
+            <div class="header-content">
+                <div class="bar">
+                    <div class="logo">
+                        <img src="./build/img/logo.svg" alt="Logo de la Cafeteria">
+                    </div>
+                    <nav class="nav">
+                        <a href="./index.html" class="nav-link">Inicio</a>
+                        <a href="./nosotros.html" class="nav-link">Nosotros</a>
+                        <a href="./proceso.html" class="nav-link">Proceso</a>
+                        <a href="./menu.html" class="nav-link">Menú</a>
+                        <a href="./galeria.html" class="nav-link">Galeria</a>
+                        <a href="./contacto.html" class="nav-link" aria-current="page">Contacto</a>
+                    </nav> <!-- navigation -->
+                </div> <!-- bar -->
+                <div class="header-text">
+                    <h1 class="header-title">mejores granos, mejor café</h1>
+                </div>
+            </div> <!-- header content -->
+        </div> <!-- wrapper -->
+    </header>
+    <main class="contentMain wrapper">
+        <h2 class="contentMain-title"><span>reserva tu</span>mesa</h2>
+        <section class="content-contacto">
+            <form class="form">
+                <div class="campo">
+                    <label for="name" class="label">Nombre:</label>
+                    <input type="text" class="input" placeholder="Tu Nombre" required id="name">
+                </div> <!-- campo -->
+                <div class="campo">
+                    <label for="email" class="label">Email:</label>
+                    <input type="email" class="input" placeholder="Tu Email" required id="email">
+                </div> <!-- campo -->
+                <div class="campo">
+                    <label for="people" class="label">Número de personas:</label>
+                    <select name="" id=""peole required class="select">
+                        <option disabled selected>---seleccionar--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="mas">+4</option>
+                    </select>
+                </div> <!-- campo -->
+                <div class="campo">
+                    <label for="hora" class="label">Hora:</label>
+                    <input type="time" class="input" required id="hora">
+                </div> <!-- campo -->
+                <div class="campo">
+                    <label for="fecha" class="label">Fecha:</label>
+                    <input type="date" class="input" required id="fecha">
+                </div> <!-- campo -->
+                <div class="campo">
+                    <input type="submit" value="enviar" class="submit">
+                </div>
+            </form> 
+        </section> <!-- content contacto -->
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="content">
+                <div class="footer-box location">
+                    <h3 class="title">ubicacion</h3>
+                    <address class="footer-text">Barrana 124</address>
+                    <address class="footer-text">Perú, Lima</address>
+                </div> <!-- footer box -->
+                <div class="footer-box reservation">
+                    <h3 class="title">reservación</h3>
+                    <p class="footer-text">Tel. +51 922-054-874</p>
+                    <a class="footer-button" href="tel:+51992054874">Llamar</a>
+                    <a class="footer-button" href="https://wa.me/922054874" target="_blank">Enviar WhatsAapp</a>
+                </div> <!-- footer box -->
+                <div class="footer-box time">
+                    <h3 class="title">horario</h3>
+                    <p class="footer-text">Lun-Jue: 11:00 - 22:00</p>
+                    <p class="footer-text">Vie-Sab: 09:00 - 24:00</p>
+                    <p class="footer-text">Domingo: Cerrado</p>
+                </div> <!-- footer box -->
+            </div> <!-- content -->
+            <p class="copyright">Todos los derechos reservados. La Cafetería</p>
+        </div> <!-- wrapper -->
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+@use '../base/variables' as v;
+@use '../base/minxis' as m;
+
+
+.header {
+    padding-block: 3.125rem;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::before {
+        content: ' ';
+        position: absolute;
+        inset-block-start: 0;
+        inset-block-end: 0;
+        inset-inline-start: 0;
+        inset-inline-end: 0;
+        background: v.$black;
+        opacity: .6;
+    }
+
+    @include m.tablet {
+        min-block-size: 700px;
+        box-sizing: border-box;
+    }
+
+    .header-content {
+        position: relative;
+
+        .header-title {
+            color: v.$white;
+            text-transform: uppercase;
+            text-align: center;
+            margin-block-start: 3.125rem;
+            
+            @include m.tablet { 
+                margin-block-start: 6.25rem;
+            }
+        
+        }
+    }
+
+    
+}
+
+
+// FONDO DE LAS PAGINAS
+
+
+.header-inicio {    
+    @include m.bgimg ('../img/header_inicio.jpg');
+    @include m.bgimg ('../img/header_inicio.webp');
+    @include m.bgimg ('../img/header_inicio.avif');
+}
+
+.header-nosotros {
+    @include m.bgimg ('../img/header_nosotros.jpg');
+    @include m.bgimg ('../img/header_nosotros.webp');
+    @include m.bgimg ('../img/header_nosotros.avif');
+}
+
+.header-proceso {
+    @include m.bgimg ('../img/header_proceso.jpg');
+    @include m.bgimg ('../img/header_proceso.webp');
+    @include m.bgimg ('../img/header_proceso.avif');
+}
+
+.header-menu {
+    @include m.bgimg ('../img/header_menu.jpg');
+    @include m.bgimg ('../img/header_menu.webp');
+    @include m.bgimg ('../img/header_menu.avif');
+}
+
+.header-galeria {
+    @include m.bgimg ('../img/header_galeria.jpg');
+    @include m.bgimg ('../img/header_galeria.webp');
+    @include m.bgimg ('../img/header_galeria.avif');
+}
+
+.header-contacto {
+    @include m.bgimg ('../img/header_contacto.jpg');
+    @include m.bgimg ('../img/header_contacto.webp');
+    @include m.bgimg ('../img/header_contacto.avif');
+}
