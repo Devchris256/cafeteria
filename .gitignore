@@ -1,6 +1,2 @@
-<<<<<<< HEAD
-node_modules
-=======
 #ignora la carpeta node_modules
 node_modules
->>>>>>> feature
